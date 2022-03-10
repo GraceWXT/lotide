@@ -46,3 +46,7 @@ const cd2 = { c: "1", d: ["2", 3, 4] };
 
 assertObjectEqual(cd, dc);
 assertObjectEqual(cd, cd2);
+
+//What Compass suggested to Fix The Object Output Issue
+const inspect = require('util').inspect; 
+console.log(`Object cd: ${inspect(cd)}`);
