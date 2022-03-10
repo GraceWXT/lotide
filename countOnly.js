@@ -13,7 +13,7 @@ const countOnly = function(allItems, itemsToCount) {
       } else {
         results[item]++;
       }
-    }    
+    } 
   }
   return results;
 };
