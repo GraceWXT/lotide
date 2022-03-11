@@ -10,7 +10,7 @@ It should keep going until the callback/predicate returns a truthy value.
 const takeUntil = function(array, terminator) {
   let slicedArray = [];
   for (let element of array) {
-    if (!terminator(element)) {
+    if (!terminator(element)) { //note when terminator returns 0, "", undefined or other falsy values, it will alse keep going
       slicedArray.push(element);
     } else {
       return slicedArray;
