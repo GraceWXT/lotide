@@ -1,7 +1,3 @@
-const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`👍🏻 Assertion Passed: ${actual} === ${expected}`) : console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-};
-
 /*Pseudo Code:
 let result = true
 if length is not the same
@@ -26,16 +22,4 @@ const eqArrays = function(arr1, arr2) {
   return result;
 };
 
-//Test code
-// eqArrays([1, 2, 3], [1, 2, 3]); // => true
-// eqArrays([1, 2, 3], [3, 2, 1]); // => false
-
-// eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true
-// eqArrays(["1", "2", "3"], ["1", "2", 3]); // => false
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should PASS
-
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should PASS
-
+module.exports = eqArrays;
