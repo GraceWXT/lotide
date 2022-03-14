@@ -3,7 +3,7 @@
 //   actual === expected ? console.log(`👍🏻 Assertion Passed: ${actual} === ${expected}`) : console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
 // };
 const assertEqual = require("../assertEqual");
-const head = require("../head")
+const head = require("../head");
 
 //Test code
 assertEqual(head([5,6,7]), 5);
