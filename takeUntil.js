@@ -19,6 +19,7 @@ const takeUntil = function(array, terminator) {
   return slicedArray; //in case the terminating condition was never met
 };
 
+module.exports = takeUntil;
 
 //Test function:
 

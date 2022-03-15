@@ -40,6 +40,8 @@ const assertObjectEqual = function(obj1, obj2) {
   }
 };
 
+module.exports = assertObjectEqual;
+
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 const cd2 = { c: "1", d: ["2", 3, 4] };
@@ -49,4 +51,5 @@ assertObjectEqual(cd, cd2);
 
 //What Compass suggested to Fix The Object Output Issue
 const inspect = require('util').inspect; 
-console.log(`Object cd: ${inspect(cd)}`);
+console.log(`Inspect Object cd: ${inspect(cd)}`);
+console.log(`StringifyObject cd: ${JSON.stringify(cd)}`);

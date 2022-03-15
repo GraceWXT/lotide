@@ -13,6 +13,8 @@ const letterPositions = function(string) {
   return results;
 };
 
+module.exports = letterPositions;
+
 //Assertion functions
 const eqArrays = function(arr1, arr2) {
   let result = true;
